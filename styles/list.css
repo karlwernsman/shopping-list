@@ -22,9 +22,32 @@ main {
 }
 
 #remove-button {
-    height: 50px;
+    height: 25px;
+    margin-top: 25px;
 }
 
 li.bought {
     text-decoration: line-through;
+}
+
+#check {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 5px solid aliceblue;
+    border-radius: 5px;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 5px solid aliceblue;
+}
+
+ul li:last-child {
+    border-bottom: none;
+    border-radius: 5px;
 }

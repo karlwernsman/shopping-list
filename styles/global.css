@@ -42,6 +42,7 @@ body {
     font-size: 1.3em;
     font-weight: 800;
     flex-grow: 2;
+    font-size: 30px;
 }
 
 .page-header nav {
@@ -68,4 +69,8 @@ main {
 
 .hidden {
     display: none;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
 }
