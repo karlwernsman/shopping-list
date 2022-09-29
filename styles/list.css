@@ -1,0 +1,54 @@
+main {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+}
+
+#add-item-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+#add-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+#remove-button,
+#remove-bought-button {
+    height: 25px;
+    width: 200px;
+}
+
+li.bought {
+    text-decoration: line-through;
+}
+
+#check {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 5px solid aliceblue;
+    border-radius: 5px;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 5px solid aliceblue;
+}
+
+ul li:last-child {
+    border-bottom: none;
+    border-radius: 5px;
+}
