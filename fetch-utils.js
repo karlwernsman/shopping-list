@@ -34,3 +34,7 @@ export async function createItem(item) {
 export async function getItem() {
     return await client.from('shopping_list').select('*').order('created_at');
 }
+
+export async function boughtItem(id) {
+    return await client.from('shopping_list').update({ bought: true }).eq('id', id).single();
+}

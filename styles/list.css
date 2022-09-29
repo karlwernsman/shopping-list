@@ -24,3 +24,7 @@ main {
 #remove-button {
     height: 50px;
 }
+
+li.bought {
+    text-decoration: line-through;
+}
