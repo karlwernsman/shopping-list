@@ -21,9 +21,10 @@ main {
     justify-content: center;
 }
 
-#remove-button {
+#remove-button,
+#remove-bought-button {
     height: 25px;
-    margin-top: 25px;
+    width: 200px;
 }
 
 li.bought {

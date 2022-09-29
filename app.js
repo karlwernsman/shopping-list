@@ -1,7 +1,7 @@
 /* Imports */
 // this will check if we have a user and set signout link if it exists
 import './auth/user.js';
-import { boughtItem, createItem, deleteAllItems } from './fetch-utils.js';
+import { boughtItem, createItem, deleteAllItems, deleteBought } from './fetch-utils.js';
 import { renderItem } from './render-utils.js';
 import { getItem } from './fetch-utils.js';
 
@@ -10,6 +10,7 @@ const shoppingList = document.getElementById('shopping-list');
 const errorDisplay = document.getElementById('error-display');
 const addItemForm = document.getElementById('add-item-form');
 const removeButton = document.getElementById('remove-button');
+const removeBoughtButton = document.getElementById('remove-bought-button');
 
 /* State */
 let items = [];
@@ -58,6 +59,19 @@ removeButton.addEventListener('click', async () => {
         displayError();
     } else {
         items = [];
+        displayItems();
+    }
+});
+
+removeBoughtButton.addEventListener('click', async () => {
+    const response = await deleteBought();
+    error = response.error;
+
+    if (error) {
+        displayError();
+    } else {
+        const response = await getItem();
+        items = response.data;
         displayItems();
     }
 });
