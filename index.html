@@ -25,6 +25,9 @@
         <!-- css -->
         <link rel="stylesheet" href="/styles/reset.css" />
         <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="stylesheet" href="/styles/form.css" />
+        <link rel="stylesheet" href="/styles/list.css" />
+
         <!-- add link for page specific css -->
     </head>
 
@@ -40,8 +43,17 @@
 
         <main>
             <form id="add-item-form">
-                <input name="description" required placeholder="add a list item" />
-                <button>Add</button>
+                <label>
+                    Quantity
+                    <input type="number" name="quantity" />
+                </label>
+
+                <label>
+                    Item
+                    <input name="item" />
+                </label>
+
+                <button id="add-button">Add</button>
             </form>
 
             <div class="container">

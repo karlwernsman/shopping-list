@@ -27,4 +27,6 @@ export async function signOutUser() {
     return await client.auth.signOut();
 }
 
-/* Data functions */
+export async function createItem(item) {
+    return await client.from('shopping_list').insert(item).single();
+}

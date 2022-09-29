@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+}
+
+#add-item-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+#add-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+#remove-button {
+    height: 50px;
+}
